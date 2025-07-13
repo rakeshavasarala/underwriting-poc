@@ -1,3 +1,4 @@
 .streamlit/
 .secret.txt
+secret.txt
 .env
