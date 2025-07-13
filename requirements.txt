@@ -1,0 +1,7 @@
+# requirements.txt
+streamlit
+azure-identity
+azure-ai-projects
+dotenv
+azure-core
+azure-ai-agents
