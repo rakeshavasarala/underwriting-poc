@@ -57,7 +57,7 @@ def ask_agent(prompt: str) -> str:
     msgs = client.agents.messages.list(
         thread_id, order=ListSortOrder.ASCENDING, limit=20
     )
-    for msg in msgs:
+    for msg in reversed(list(msgs)):
         if msg.role == "assistant" and msg.text_messages:
             return msg.text_messages[-1].text.value
     return "(no reply)"
